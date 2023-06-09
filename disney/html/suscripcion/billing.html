@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="../../img/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/stylosubs.css">
+    <link rel="stylesheet" type="text/css" href="../../css/pasos234.css">
+    <script type="text/javascript" src="../../js/dinamic.js"></script>
+    <script type="text/javascript" src="../../js/pasos.js"></script>
+	<title>Suscribirse | Disney+</title>
+</head>
+<body>
+    <header>
+        <!--Barra de navegacion-->
+        <div class="imgindex">
+            <a href="../../index.html">
+                <img src="../../img/original.svg">
+            </a>
+            <a href="../login.html">Iniciar Sesión</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="paso4">
+            <p>Paso 4 de 4</p>
+            <h5>Disfruta hoy mismo.</h5>
+            <p>Un sinfin de historias por solo MXN 179.00/mes.</p>
+            <p>La cancelción puede hacerse en cualquier momento y entrará en vigor cuando termine el periodo de facturación.</p>
+            
+            <div class="periodo">
+                <button onclick="periodo(id)" id="per1">
+                    <p id="mes">Mensual</p>
+                    <p id="monto">MXN 179.00</p>
+                    <input type="radio" name="pago" id="pago1">
+                </button>
+                <button onclick="periodo(id)" id="per2">
+                    <p id="mes">Anual</p>
+                    <p id="monto">MXN 1,599.00</p>
+                    <input type="radio" name="pago" id="pago2">
+                </button>
+            </div>
+            
+            <div class="metodo">
+                <div>
+                    <div class="imgpago" id="met1" onclick="resaltar(id)">
+                        <img src="../../img/tarjeta.png">
+                    </div>
+                    <p>Crédito/débito</p>
+                </div>
+                <div>
+                    <div class="imgpago" id="met2" onclick="resaltar(id)">
+                        <img src="../../img/paypal.png">
+                    </div>
+                    <p>PayPal</p>
+                </div>
+                <div>
+                    <div class="imgpago" id="met3" onclick="resaltar(id)">
+                        <img src="../../img/mercado.png">
+                    </div>
+                    <p>Mercado Pago</p>
+                </div>
+            </div>
+            <div class="formulario">
+                <form>
+                    <label for="nombre">NOMBRE EN LA TARJETA</label>
+                    <input value="" type="text" class="entrada" id="nombre" style="color: white" required>
+                    
+                    <img src="../../img/visa.png" id="visa">
+                    
+                    <label for="numero">NÚMERO DE LA TARJETA</label>
+                    <input value="" type="text" class="entrada" id="numero" maxlength="19" oninput="tarjeta()" onkeydown="tarjeta(event)" style="color: white" required>
+                    
+                    <div class="datobanco">
+                        <div>
+                            <label for="fecha">FECHA DE VENCIMIENTO</label>
+                            <input value="" type="text" class="entrada" id="fecha" maxlength="5" style="color: white" required>
+                        </div>
+                        <div>
+                            <label for="cvv">CÓDIGO DE SEGURIDAD</label>
+                            <input value="" type="text" class="entrada" id="cvv" maxlength="3" style="color: white" required>
+                        </div>
+                    </div>
+                    <div class="saveinfo">
+                        <div class="savetext">
+                            <p>Guardar mis datos de pago para usarlos en otros servicios de la Familia de Compañías Walt Disney. <a>Más información</a></p>
+                        </div>
+                        <div id="wrap-toggle">
+                            <input type="checkbox" id="toggle" class="offscreen">
+                            <label for="toggle" class="switch"></label>
+                        </div>
+                    </div>
+                    <label for="rfc">RFC (Opcional)</label>
+                    <input type="text" name="rfc" id="rfc" style="color: white">
+                    <div>
+                        <p id="acfinal">Al seleccionar aceptar y suscribirse, aceptas que tu suscripción comenzará de inmediato. No recibirás un reembolso por las suscripciones mensuales o anuales si cancelas el contrato y ya usaste el contenido digital. Te cobraremos el cargo mensual o anual estándar de forma recurrente segpun tu método de pagoregistrado. La cancelación puede hacerse en cualquier momento y entrará en vigor cuando termine el periodo de facturación.</p>
+                    </div>
+                    <button>ACEPTAR Y SUSCRIBIRSE</button>
+                </form>
+            </div>
+            <div class="hidden" id="errormail"><p>Lo sentimos, tenemos problemas para crar tu cuenta. Vuelve a escribir tu correo electrónico y contraseña e intenta de nuevo. Si el problema continúa, comunícate con atención al cliente de Disney+ (código de error 6).</p></div>
+
+        </div>
+        <img src="../..//original.svg" class="hidden" id="pic">
+    </main>
+    
+    <footer>
+        <img src="../../img/original.svg">
+            <div class="ft">
+                <a href="https://www.google.com/?hl=es" target="_blank">Política de privacidad</a>
+                <a href="https://www.google.com/?hl=es" target="_blank">Aviso de privacidad</a>
+                <a href="https://www.google.com/?hl=es" target="_blank">Acuerdo de suscripción</a>
+                <a href="https://www.google.com/?hl=es" target="_blank">Ayuda</a>
+                <a href="https://www.google.com/?hl=es" target="_blank">Dispositivos compatibles</a>
+                <a href="https://www.google.com/?hl=es" target="_blank">Acerca de Disney+</a>   
+                <a href="https://www.google.com/?hl=es" target="_blank">Publicidad personalizada</a> 
+                <p>El servicio Disney+ es comercializado por WDC (MEXICO), S. DE R.L. DE C.V. Periférico Sur 3299, Piso 11, Colonia Fuentes del Pedregal, Alcaldía Tlalpan, 14140, CDMX y número de RFC WME29202211837.</p>
+                <P>&copy;Disney. Todos los derechos reservados.</P>
+            </div>
+    </footer>
+</body>
+</html>
