@@ -1,0 +1,188 @@
+html
+{
+    background-color: #1A1D29;
+    color: silver;
+    font-size: 30px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: Avenir,sans-serif;
+    letter-spacing: 1px;
+}
+
+*
+{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+/*CIRCULO CARGA DE PAGINA*/
+#contenedor_carga
+{
+    background-color: black;;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#centro
+{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;   
+}
+
+#carga
+{
+    
+    background-image: conic-gradient(#032154 75deg, #0043B4 150deg, #2FB2F8 225deg, #2FEFF8 300deg, white 310deg, transparent 320deg);
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/*PAGINA EN GENERAL*/
+
+.imgindex
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: silver solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-width: 1px;
+}
+
+.imgindex img
+{
+    margin: 5px 25px; 
+    width: 80px;
+    height: 44px;
+}
+
+.cuerpo
+{
+    width: 400px;
+    margin: 30px auto 10px auto;
+    padding: 30px;
+    word-break: break-word;
+    display: flex;
+    flex-direction: column; 
+}
+
+.cuerpo p
+{
+    font-size: 0.4rem;
+    line-height: 30px;
+}
+
+.cuerpo h5
+{
+    margin: 0;
+}
+
+.cuerpo .entrada
+{
+    max-width: 100%;
+    margin: 0;
+    height: 42px;
+    background-color: rgb(49,52,62);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    color: silver;
+}
+
+.cuerpo button
+{
+    width: 100%;
+    height: 48px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #0072D2;
+    color: white;
+    font-size: 0.5rem;
+}
+
+.cuerpo a
+{
+    text-decoration: none;
+    color: silver;
+}
+
+footer
+{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    padding-top: auto:
+    padding-bottom: auto;
+    padding-right: calc(1vw-10px);
+    padding-left: calc(1vw-10px);
+    background-color: #0E0B14;
+    font-size: 0.35rem;
+}
+
+footer img
+{
+    width: 84px;
+    height: auto;
+    margin: 20px auto 0 auto;
+}
+
+footer .ft
+{
+    width: 500px;
+    margin: 0 auto;
+    word-break: break-word;
+    text-align: center;
+}
+
+.ft a
+{
+    color: silver;
+    line-height: 50px;
+    margin-top: 0; 
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ft p
+{
+    line-height: 20px;
+}

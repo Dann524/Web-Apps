@@ -1,0 +1,421 @@
+html
+{
+    background-color: #1A1D29;
+    color: silver;
+    font-size: 30px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: Avenir,sans-serif;
+    letter-spacing: 1px;
+}
+
+:root
+{
+  --bg: #110921;
+  --purple: #3720b4;
+  --green: #5ff8c2;
+}
+
+h5
+{
+    color: white;
+}
+
+*
+{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.imgindex a
+{
+    color: white;
+}
+
+
+.paso
+{
+    margin: 50px auto;
+    width: 500px;
+    height: 400px;
+}
+
+.paso h5
+{
+    margin: auto 0;
+}
+
+.paso p
+{
+    margin: 0;
+    font-size: 0.4rem;
+}
+
+.paso .textocentro
+{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.paso .textocentro button
+{
+    width: 80%;
+    height: 48px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #0072D2;
+    color: white;
+    font-size: 0.5rem;
+    cursor: pointer;
+}
+
+.paso1 .conte
+{
+    width: 100%;
+    position: relative;
+}
+
+.paso1 img
+{
+    width: 32px;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 94%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.paso1 .conte input
+{
+    min-width: 94%;
+    margin: 0;
+    height: 42px;
+    background-color: rgb(49,52,62);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    color: silver;
+}
+
+.paso1 .usuario
+{
+    border: silver solid;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 0.6rem;
+    color: white;
+    margin: 15px 0;
+}
+
+.paso1 .usuario p
+{
+    font-size: 0.4rem;
+    margin: 0;
+    color: silver;
+}
+
+#texto2
+{
+    font-size: 0.35rem;
+    line-height: 15px;
+}
+
+#errormail p, #errorpass p
+{
+    margin: 20px auto;
+    color: #FF554C;
+    font-size: 0.4rem;
+    line-height: 20px;
+    width: 100%;
+}
+
+.btnpass button
+{
+    width: 100%;
+    height: 48px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #0072D2;
+    color: white;
+    font-size: 0.5rem;
+    cursor: pointer;
+}
+
+.paso .texto
+{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    border: 1px silver solid;
+    overflow: scroll;
+    text-align: start;
+}
+
+.paso .texto p
+{
+    margin: 10px;
+}
+
+/*Paso 4*/
+.paso4
+{
+    width: 400px;
+    margin: 30px auto 10px auto;
+    padding: 30px;
+    word-break: break-word;
+    display: flex;
+    flex-direction: column; 
+    transition: all 0.5s ease;
+}
+
+.paso4 h5
+{
+    margin: 10px 0;
+}
+
+.paso4 p
+{
+    margin: 10px 0;
+    font-size: 0.4rem;
+}
+
+.paso4 input
+{
+    min-width: 94%;
+    margin: 0;
+    height: 42px;
+    background-color: rgb(49,52,62);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    color: silver;
+}
+
+.paso4 .periodo
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.paso4 .periodo button
+{
+    width: 49%;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    background-color: #1A1D29;
+    padding: 0;
+    border-color: transparent;
+    transform: all 0.2s;
+    cursor: pointer;
+}
+
+.paso4 .periodo input
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 90%;
+    transform: all 0.2s;
+}
+
+#mes
+{
+    color: white;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 10px auto auto 10px;
+    text-align: start;
+}
+
+#monto
+{
+    color: silver;
+    font-size: 0.4rem;
+    margin: 5px auto 10px 10px;
+    text-align: start;
+}
+
+.paso4 .metodo
+{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: silver solid 1px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.paso4 .metodo div
+{
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.paso4 .metodo div .imgpago
+{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    border-color: transparent;
+    justify-content: center;
+}
+
+.imgpago img
+{
+    width: 70%;
+    height: auto; 
+}
+
+/*Formulario del paso 4*/
+.formulario
+{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.formulario #visa
+{
+    position: absolute;
+    height: 5%;
+    width: auto;
+    transform: translate(-50%,-50%);
+    top: 155px;
+    left: 83%;
+}
+
+.formulario label
+{
+    font-size: 0.4rem;
+}
+
+.formulario .datobanco
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formulario .datobanco div
+{
+    width: 48%;
+    display: block;
+}
+
+.formulario .datobanco div input
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario .saveinfo
+{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.formulario .saveinfo .savetext
+{
+    width: 80%;
+}
+
+.formulario .saveinfo .savetext p
+{
+    font-size: 0.34rem;
+}
+
+#wrap-toggle
+{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+/*Contenedor del switch*/
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    border-radius: 40px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: auto;
+}
+
+/*Circulo del interruptor*/
+.switch:after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    left: 5px;
+    top: 4px;
+    transition: all 0.4s;
+}
+
+/*Evento de activacion de switch: cambios en el contenedor*/
+input[type='checkbox']:checked + .switch:after
+{
+    transform: translatex(30px);
+}
+
+/*Evento de activacion de switch: cambios en el circulo*/
+input[type='checkbox']:checked + .switch
+{
+    background-color: #0063E5;
+}
+
+.offscreen
+{
+    position: absolute;
+    display: none;
+}
+
+.formulario #acfinal
+{
+    font-size: 0.35rem;
+}
+
+.formulario button
+{
+    width: 100%;
+    height: 52px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #0063E5;
+    color: white; 
+    font-weight: bold;
+    border: transparent;
+    cursor: pointer;
+}

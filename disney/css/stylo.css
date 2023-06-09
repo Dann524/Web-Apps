@@ -1,0 +1,1320 @@
+html
+{
+    background-color: #040714;
+    color: silver;
+    font-size: 30px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: Avenir,sans-serif;
+    letter-spacing: 1px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+input
+{
+    background-color: white;
+}
+
+.barra-nav
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    /*cuando entre en accion la clase, vamos a desvanecer el color*/
+    transition: all 0.9s linear 0.2s;
+}
+
+.nav-hijo
+{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.imgmain
+{
+    width: 80px;
+    height: 44px;
+    margin: 10px 0 auto 3.5%;
+    display: block;
+    opacity: 0;
+    transition: all 0.9s linear 0.2s;
+}
+
+.nav-hijo div
+{
+    top: 5px;
+    right: 3%;
+    display: flex;
+    align-self: end;
+    position: absolute;
+}
+
+.nav-hijo button
+{
+    font-size: 0.6rem;
+    padding: 15px 10px;
+    color: white;
+    background-color: rgb(0,0,0,0.8);
+    font-weight: lighter;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: auto 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.boton-subs
+{
+    background-color: #6421FF;
+    opacity: 0;
+    transition: all 0.9s linear 0.2s;
+}
+
+.boton-login:hover
+{
+    background-color: white;
+    color: black;
+}
+
+#btnsubs
+{
+    background-color: #0063E5;
+}
+
+.mostrar
+{
+    display: block;
+    background-color: #2020f5;
+    animation: entrada 1 ease-in-out 1s
+}
+
+.show2
+{
+    width: 80px;
+    height: 44px;
+    margin: 10px 0 auto 3.5%;
+    display: block;
+    cursor: pointer;
+  
+    animation-name: entrada;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes entrada
+{
+    0%
+    {
+        opacity: 0;
+    }
+    
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.fondo
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #040714;
+    position: fixed;
+    z-index: 2; 
+    top: 0;
+    
+    animation-name: entrada;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+.transparente
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+/* PARTE SUPERIOR, SERVICIOS, LOGO Y BOTON DE SESION*/
+.contenedor-padre
+{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.contenedor-padre .logo-slogan
+{
+    position: absolute;
+    top:120px;
+    left: 5%;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.contenedor-padre .logo-slogan img
+{
+    width: 52%;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.contenedor-padre .logo-slogan p
+{
+   font-size: 0.9rem;
+   margin: 1.5% 0;
+   font-weight: bold;
+   font-weight: 700;
+   background-color: transparent;
+   color: white;
+}
+
+.contenedor-padre .conglomerado img
+{
+    height: 430px;
+    width: 95%;
+}
+
+.contenedor-padre .conglomerado
+{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    text-align: end;
+}
+
+.contenedor-padre .boton-login
+{
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    text-align: end;
+    height: auto;
+    width: 40%;
+}
+
+.contenedor-padre .servicios1
+{
+    position: relative;
+    top: 400px;
+    left: 2%;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+}
+
+.contenedor-padre .servicios1 .grupo1
+{
+    position: static;
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-padre .servicios1 .grupo2
+{
+    position: static;
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-padre .servicios1 img
+{
+    position: inline;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-padre .servicios1 button
+{
+    position: inline;
+    height: auto;
+    width: 90%;
+    font-size: 0.65rem;
+    padding: 18px 10px;
+    margin: 30px auto;
+    color: white;
+    background-color: #6421FF;
+    border-radius: 5px;
+}
+
+.contenedor-padre .enlace1
+{
+    position: relative;
+    top: 350px;
+    left: 2%;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    font-size: 0.45rem;
+    margin: 75px 0;
+}
+
+.principal
+{
+    margin: 150px 0 100px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.principal .titulos
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.principal .descripciones
+{
+    font-size: 0.5rem;
+    font-weight: lighter;
+    margin: 20px 0 0 0;
+}
+
+/*TABLA DE PAQUETES DISNEY*/
+.filastit
+{   
+    margin: 0 auto;
+    width: 91%;
+    display: flex;
+    background-color: #040714;
+    justify-content: end;
+    border: 1px silver groove;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    
+    z-index: 1;
+    position: sticky;
+    top:80px;
+}
+
+.filaaux
+{
+    display: flex;
+    width: 66%;
+}
+
+.filaaux .celdas
+{
+    width: 33.33%;
+    text-align: center;
+    padding: 15px 0 25px 0;
+    font-size: 0.5rem;
+    align-items: center;
+    background-color: #040714;
+    
+    border: 1px silver groove;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.filaaux .celdas .img1
+{
+    height: auto;
+    width: 40%;
+    margin-bottom: 28px;
+}
+
+.filaaux .celdas .img2, .img3
+{
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*Más popular*/
+#celda2
+{
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.filaaux a button
+{
+
+    font-weight: lighter;
+    font-weight: 100;
+    text-decoration: none;
+    height: auto;
+    padding: 6% 12%;
+    border-radius: 5px;
+    color: white;
+    background-color: #6421FF;
+    margin: auto 2px;
+    word-break: break-word;
+}
+
+.tabla
+{
+    
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.tabla .filas
+{
+    display: flex;
+    width: 100%;
+    border: silver groove;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.tabla #fila1
+{
+    border: silver groove;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+}
+
+.tabla .titulos
+{
+    width: 34%;
+    text-align: start;
+    font-size: 0.55rem;
+    padding: 0 0 10px 0;
+}
+
+.tabla .grupo-celdas
+{
+    display: flex;
+    width: 66%;
+}
+
+.tabla .celdas
+{
+    width: 33.33%;
+    min-height: 80px;
+    font-size: 0.5rem;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.tabla .centro-vertical-img .filas .celdas img
+{
+    width: 12%;
+    height: auto;
+    position: absolute;
+    /*CENTRADO VERTICAL DE IMAGEN*/
+    transform:translate(-50%,-50%);
+    top: 50%;
+    bottom: 50%;
+}
+
+.tabla .celdas p
+{
+    font-size: 0.55rem;
+    margin: 40px auto;
+}
+
+#nota
+{
+    text-align: start;
+    font-size: 0.4rem;
+    margin: 20px 5% 200px 5%;
+}
+
+/*CUANDO QUIERAS DONDE QUIERAS*/
+
+.contenedor
+{
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto 150px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor .cont-img
+{
+    width: 50%;
+    height: auto;
+}
+
+.contenedor img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.contenedor .descripcion
+{
+    width: 50%;
+    font-size: 0.63rem;
+}
+
+
+h2
+{
+    color: white;
+    font-size: 1.3rem;
+    margin: 15% 0 0 5%;
+}
+
+.contenedor p
+{
+    margin: 30px;
+    line-height: 30px;
+}
+
+/*EXCLUSIVOS*/
+.titulo-exc
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-exc p
+{
+    font-size: 0.6rem;
+}
+
+.exclusivos
+{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+}
+
+.exclusivos .fila-exc
+{
+    width: 100%;
+    display: flex;
+}
+
+.exclusivos .fila-exc .celda-exc
+{
+    width: 31%;
+    margin: 0 auto;
+}
+
+.exclusivos img
+{
+    margin: 2% auto;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*LION KING*/
+.lionkig
+{
+    margin: 150px auto;
+    width: 90%;
+    position: relative;
+}
+
+.lionkig img
+{
+    height: auto;
+    width: 100%;
+}
+
+.lionkig .desc
+{
+    top: 35%;
+    right: 2%;
+    width: 45%;
+    margin: auto 0;
+    position: absolute;
+}
+
+h3
+{
+   font-size: 0.9rem;
+    color: white;
+}
+
+.lionkig .desc p
+{
+    font-size: 0.55rem;
+    line-height: 150%;
+}
+
+/*TABLA DE DISPOSITIVOS*/
+.tabladispo
+{
+    width: 90%;
+    margin: 0 auto 150px auto;
+    display: grid;
+}
+
+.tabladispo .titu-dispo
+{
+    width: 100%;
+    margin: 0;
+}
+
+.tabladispo .titu-dispo h2
+{
+    margin: 2% auto;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.tabladispo .lista
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.tabladispo .lista .celda
+{
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+
+.tabladispo ul
+{
+    font-size: 0.6rem;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    line-height: 150%;
+}
+
+.tabladispo .lista .celda img
+{
+    width: 100%;
+    height: auto;
+}
+
+/*Preguntas frecuentes*/
+.preguntas
+{
+    margin: 20px auto 20px auto;
+    width: 90%;
+    /*border: cyan solid;*/
+}
+
+.preguntas button
+{
+    width: 100%;
+    font-size: 0.65rem;
+    text-align: start;
+    background-color: #13151d;
+    padding: 24px;
+    color: #f9f9f9;
+    border: transparent;
+    margin-bottom: 0;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+}
+
+.preguntas button img
+{
+    position: relative;
+    width: 2%;
+    height: auto;
+}
+
+.preguntas p
+{
+    padding: 0 0 0 24px;
+    color: silver;
+    margin: 0;
+}
+
+.estilobtn
+{
+    display: none;
+    background-color: #13151d;
+    color: silver;
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 5px;
+    line-height: 35px;
+    opacity: 0;
+    transition: all 0.9s linear 0.2s;
+}
+
+/*APOYA A MOSTRAR / OCULTAR CONTENIDO EN CONJUNTO CON JAVASCRIPT COMBINANDOSE CON OTRAS CLASES CSS*/
+.show
+{
+    opacity: 1;
+    display: block; 
+}
+
+.estilobtn.show
+{
+    opacity: 1;
+    transition: all 0.9s linear 0.2s;
+}
+
+/*TËRMINOS Y CONDICIONES*/
+.disneyft
+{
+    margin: 100px auto 50px auto;
+    width: 80%;
+    display: grid;
+    padding: auto;
+    font-size: 0.35rem;
+    display: grid;
+    text-align: center;
+}
+
+.disneyft img
+{
+    margin: 15px auto;
+    width: 8%;
+    height: auto;
+}
+
+.disneyft .piepagina
+{
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
+    text-align: center;
+}
+
+.disneyft .piepagina .icoidioma
+{
+    display: flex;
+}
+
+.disneyft .piepagina .icoidioma img
+{
+    width: 16px;
+    height: auto;
+    margin: auto 0;
+}
+
+.disneyft select
+{
+    background-color: transparent;
+    color: silver;
+    border: none;
+    margin: auto 0;
+    cursor: pointer;
+    padding: 0 26px;
+}
+
+.disneyft option
+{
+    color: black;
+}
+
+.disneyft a
+{
+    font-size: 0.4rem;
+    margin: auto 7px;
+    text-decoration: none;
+    color: silver;
+    text-align: center;
+    
+}
+
+.disneyft p
+{
+    line-height: 20px;
+}
+
+/*Diseño Responsive*/
+@media only screen and (max-width: 1023px) and (min-width: 771px)
+{
+     /*Conglomerado y portada*/
+    .contenedor-padre
+    {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        display: grid;
+    }
+    
+    .contenedor-padre .conglomerado
+    {
+        position: static;
+    }
+    
+    .contenedor-padre .conglomerado img
+    {
+        height: auto;
+        width: 100%;
+    }
+    
+    .contenedor-padre .logo-slogan
+    {
+        display: block;
+        position: static;
+        width: 99%;
+        height: auto;
+        margin: 20px 0 50px 0;
+    }
+
+    .contenedor-padre .logo-slogan img
+    {
+        width: 40%;
+        height: auto;
+    }
+
+    .contenedor-padre .logo-slogan p
+    {
+        font-size: 0.7rem;
+        font-weight: bold;
+        font-weight: 700;
+        margin: auto 3%;
+    }
+    /*Suscripnio, login y enlace*/
+    .contenedor-padre .servicios1
+    {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedor-padre .servicios1 img
+    {
+        position: inline;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contenedor-padre .servicios1 button
+    {
+        position: inline;
+        height: auto;
+        width: 95%;
+        font-size: 0.5rem;
+        padding: 18px 10px;
+        margin: 30px auto;
+    }
+
+    .contenedor-padre .enlace1
+    {
+        position: static;
+        width: 50%;
+        text-align: center;
+        padding: 0;
+        font-size: 0.45rem;
+        margin: 20px auto 0 auto;
+    }
+    /*Elige tu plan*/
+    .filaaux .celdas .img3
+    {
+        height: auto;
+        width: 100%;
+        margin-bottom: 13px;
+    }
+    
+    .tabla .centro-vertical-img .filas .celdas img
+    {
+        width: 20%;
+        height: auto;
+        position: absolute;
+        /*CENTRADO VERTICAL DE IMAGEN*/
+        transform:translate(-50%,-50%);
+        top: 50%;
+    }
+    /*CUANDO QUIERAS DONDE QUIERAS*/
+    .contenedor
+    {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-flow: row;
+    }
+
+    .contenedor .cont-img
+    {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor .cont-img img
+    {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .contenedor .descripcion
+    {
+        width: 100%;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .contenedor .descripcion p
+    {
+        margin: 5% 0 0 5%;
+        line-height: 150%;
+        text-align: start;
+    }
+
+    h2
+    {
+        color: white;
+        font-size: 0.7rem;
+        margin: 15% 0 0 5%;
+    }
+    /*LION KING*/
+    .lionkig
+    {
+        margin: 150px auto auto auto;
+        width: 95%;
+        display: grid;
+    }
+
+    .lionkig img
+    {
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .lionkig .desc
+    {
+        width: 50%;
+        position: absolute;
+        text-align: start;
+        top: 35%;
+    }
+
+    h3
+    {
+        font-size: 0.7rem;
+        color: white;
+    }
+
+    .lionkig .desc p
+    {
+        margin: auto 5%;
+        font-size: 0.5rem;
+        line-height: 150%;
+    }
+    /*TËRMINOS Y CONDICIONES*/
+    .disneyft
+    {
+        width: 95%;
+    }
+
+    .disneyft .piepagina
+    {
+        margin: 10px auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .disneyft .piepagina .icoidioma img
+    {
+        width: 12px;
+        height: auto;
+        margin: auto 0;
+    }
+
+    .disneyft img
+    {
+        margin: 15px auto;
+        width: 20%;
+        height: auto;
+    }
+    
+    .disneyft a
+    {
+        font-size: 0.4rem;
+        margin: auto 10px;
+        line-height: 40px;
+    }
+    
+    .disneyft select
+    {
+        font-size: 0.4rem;
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+    .disneyft option
+    {
+        color: black;
+    }
+
+}
+
+@media only screen and (max-width: 770px)
+{
+    /*Barra de navegación*/
+    .nav-hijo button
+    {
+        font-size: 0.45rem;
+    }
+
+    /*Conglomerado y portada*/
+    .contenedor-padre
+    {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        display: grid;
+    }
+    
+    .contenedor-padre .conglomerado
+    {
+        position: static;
+    }
+    
+    .contenedor-padre .conglomerado img
+    {
+        height: auto;
+        width: 100%;
+    }
+    
+    .contenedor-padre .logo-slogan
+    {
+        display: block;
+        position: static;
+        width: 99%;
+        height: auto;
+        margin: 20px 0 50px 0;
+    }
+
+    .contenedor-padre .logo-slogan img
+    {
+        width: 40%;
+        height: auto;
+    }
+
+    .contenedor-padre .logo-slogan p
+    {
+        font-size: 0.6rem;
+        font-weight: bold;
+        font-weight: 700;
+        margin: auto 3%;
+    }
+    /*Suscripnio, login y enlace*/
+    .contenedor-padre .servicios1
+    {
+        position: static;
+        width: 100%;
+        display: grid;
+    }
+
+    .contenedor-padre .servicios1 img
+    {
+        position: inline;
+        height: auto;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .contenedor-padre .servicios1 button
+    {
+        position: inline;
+        height: auto;
+        width: 70%;
+        font-size: 0.5rem;
+        padding: 18px 10px;
+        margin: 30px auto;
+    }
+
+    .contenedor-padre .enlace1
+    {
+        position: static;
+        width: 50%;
+        text-align: center;
+        padding: 0;
+        font-size: 0.45rem;
+        margin: 20px auto 0 auto;
+    }
+    /*Elige tu paquete*/
+    .filastit
+    {   
+        width: 100%;
+        justify-content: end;
+        border: 1px silver groove;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+
+        z-index: 1;
+        position: sticky;
+        top:80px;
+    }
+    
+    .filaaux
+    {
+        display: flex;
+        width: 100%;
+    }
+    
+    .filaaux .celdas .img3
+    {
+        height: auto;
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .tabla
+    {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .tabla .filas
+    {
+        display: grid;
+        width: 100%;
+    }
+
+    .tabla .titulos
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .tabla .grupo-celdas
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .tabla .celdas
+    {
+        width: 33.33%;
+        min-height: 80px;
+        font-size: 0.5rem;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #celda2
+    {
+        background-color: transparent;
+        color: white;
+    }
+    
+    /*CUANDO QUIERAS DONDE QUIERAS*/
+    .contenedor
+    {
+        width: 100%;
+        display: grid;
+        margin: auto;
+    }
+
+    .contenedor .cont-img
+    {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor .cont-img img
+    {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .contenedor .descripcion
+    {
+        width: 100%;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .contenedor .descripcion p
+    {
+        margin: 5% 0 0 5%;
+        line-height: 150%;
+    }
+
+    h2
+    {
+        color: white;
+        font-size: 0.7rem;
+        margin: 15% 0 0 5%;
+    }
+    
+    /*LION KING*/
+    .lionkig
+    {
+        margin: 150px auto auto auto;
+        width: 95%;
+        display: grid;
+    }
+
+    .lionkig img
+    {
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .lionkig .desc
+    {
+        margin: auto;
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    h3
+    {
+        font-size: 0.7rem;
+        color: white;
+    }
+
+    .lionkig .desc p
+    {
+        margin: auto 5%;
+        font-size: 0.5rem;
+        line-height: 150%;
+    }
+    /*TABLA DE DISPOSITIVOS*/
+    .tabladispo
+    {
+        width: 90%;
+        margin: 150px auto 150px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tabladispo .titu-dispo
+    {
+        width: 100%;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .tabladispo .lista
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .tabladispo .lista .celda
+    {
+        width: 48%;
+        height: auto;
+        text-align: center;
+    }
+
+    .tabladispo ul
+    {
+        font-size: 0.5rem;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        line-height: 25px;
+    }
+
+    .tabladispo .lista .celda img
+    {
+        width: 100%;
+        height: auto;
+    }
+    
+    /*Preguntas frecuentes*/
+    .preguntas button
+    {
+        font-size: 0.5rem;
+    }
+    
+    .preguntas button img
+    {
+        position: relative;
+        width: 5%;
+        height: auto;
+    }
+    /*TËRMINOS Y CONDICIONES*/
+    .disneyft
+    {
+        width: 95%;
+    }
+
+    .disneyft .piepagina
+    {
+        margin: 10px auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .disneyft .piepagina .icoidioma img
+    {
+        width: 12px;
+        height: auto;
+        margin: auto 0;
+    }
+
+    .disneyft img
+    {
+        margin: 15px auto;
+        width: 20%;
+        height: auto;
+    }
+    
+    .disneyft a
+    {
+        font-size: 0.3rem;
+        margin: auto 10px;
+        line-height: 40px;
+    }
+    
+    .disneyft select
+    {
+        font-size: 0.3rem;
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+    .disneyft option
+    {
+        color: black;
+    }
+
+}
