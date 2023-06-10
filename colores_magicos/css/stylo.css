@@ -1,0 +1,302 @@
+/*asterisco selector más general (todos los elementos)*/
+*
+{
+	/*para que elementos no crezca cuando damos espacios internos(paddings)*/
+	box-sizing: border-box;
+	font-family: roboto;
+}
+
+a button
+{
+	background-color: transparent;
+	color: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 10px 10px 10px 10px;
+	border-color: transparent;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+a button:hover
+{
+	background-color: #FFDFFC;
+	border-color: white;
+	color: #9B9A9B;
+	transition: all .5s ease-in-out;
+	-webkit-transform:scale(0.75);
+	transform: scale(0.75);
+}
+
+.imgcabecera
+{
+	width: 100px;
+	height: 75px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+header .vinculos
+{
+	/*Coloco todos los elementos de header en una linea*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255,255,255,0.8);
+
+	/*Parametros de menu desplazable*/
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top:0;
+}
+
+body
+{
+	/*background-color: #FBDFFB*/;
+	position: absolute;
+	background-image: url("../img/fondo.jpg");
+}
+
+header a
+{
+	color: black;
+	text-decoration: none;
+	margin: 0 2px 0 2px;
+	padding: 0 2px 0 2px;
+}
+
+main .cabecera2
+{
+	text-align: center;
+	text-shadow: 2px 2px white;
+}
+
+main .centro
+{
+	margin: 0 2% 0 2%;
+	text-align: center;
+	background-color: #E286FF;
+	border-radius: 20%;
+	color: white;
+}
+
+main .contenedor .derecha
+{
+	margin: 0 2% 0 2%;
+	text-align: justify;
+	background-color: rgba(355,255,255,0.6);
+	padding: 2%;
+	border-radius: 10%;
+}
+
+main .centro2
+{
+	margin: 0 2% 0 2%;
+	text-align: center;
+	background-color: #E286FF;
+	border-radius: 20%;
+	color: white;
+
+}
+
+main .contenedor .izquierda
+{
+	margin: 0 2% 0 2%;
+	text-align: justify;
+	background-color: rgba(255,255,255,0.6);
+	padding: 2%;
+	border-radius: 10%;
+}
+
+main .servicios p
+{
+	font-size: 18px;
+}
+
+main .servicios .contenedor
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*opacity: 80%;*/
+}
+
+main .servicios .contenedor .imgtama
+{
+	height: 40%;
+	width: 40%;
+	border-image-width: 100px 100px;
+	border-radius: 20% 50%;
+	border: 5px solid white;
+}
+
+main .servicios .contenedor .imgtama:hover
+{
+	-webkit-transform:scale(0.85);
+	transform: scale(0.85);
+	transition: all .5s ease-in-out;
+}
+
+footer .info
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	align-content: center;
+	color: white;
+}
+
+footer .info .redes img
+{
+	width: 20px;
+	height: 20px;
+}
+
+footer .colores2
+{
+	width: 170px;
+	height: 120px;
+}
+
+footer .info h3
+{
+	text-align: center;
+}
+
+main .galeria
+{
+	display: flex;
+	height: 600px;
+	width: 100%;
+}
+
+main .galeria img
+{
+	width: 100px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: 0.5;
+	transition: .5s ease;
+}
+
+main .galeria img:hover
+{
+	cursor: crosshair;
+	width: 300px;
+	opacity: 1;
+	filter: contrast(120%);
+}
+
+main .titulo_gal
+{
+	text-align: center;
+	color: purple;
+	font-size: 34px;
+	-webkit-text-stroke: 1px white;
+}
+
+/*Formulario y tablas*/
+.formu-fondo
+{
+	background-color: rgba(255,255,255,0.6);
+	width: 100%;
+	align-items: center;
+}
+
+.formu-fondo .tabla-estilo
+{
+	width: 100%;
+	text-align: center;
+	table-layout: fixed;
+}
+
+.formu-fondo .tabla-estilo .entrada
+{
+	border-radius: 20px;
+    width: 90%;
+    outline: 0:
+    text-align: center;
+
+    border: 0;
+    border-bottom: 2px solid pink;
+    outline: 0;
+    color: black;
+    background: transparent;
+    transition: border-color 0.2s;
+    }
+
+.formu-fondo .tabla-estilo .lectura
+{
+	border-radius: 20px;
+	width: 50%;
+	align-content: center;
+	text-align: center;
+}
+
+.formu-fondo .tabla-estilo .iz
+{
+	align-content: left;
+	align-items: left;
+	text-align: left;
+}
+
+#tit_tabla2
+{
+	padding: 2% 0;
+}
+
+#tabla2
+{
+	margin-left: 16%;
+}
+
+#tabla2 #titulos
+{
+	background-color: #E286FF;
+	color: white;
+	padding: 0 12px;
+}
+
+.formu-fondo .tabla-estilo .resultados
+{
+	text-align: left;
+	padding: 0 0 0 12%;
+}
+
+#enviar
+{
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	border-color: #F3C6FA;
+	width: 10%;
+	font-family: Vegur;
+	font-size: 120%;
+}
+
+#cupon
+{
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	border-color: #F3C6FA;
+	width: 16%;
+	font-family: Vegur;
+}
+
+#cupon:hover
+{
+	background-color: #F3C6FA;
+	color: white;
+	border-color: white;
+}
+
+#enviar:hover
+{
+	background-color: #F3C6FA;
+	color: white;
+	border-color: white;
+}
