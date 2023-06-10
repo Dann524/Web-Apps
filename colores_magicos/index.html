@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Colores Mágicos - Inicio</title>
+	<link rel="shortcut icon" href="img/icono.png">
+	<link rel="stylesheet" href="css/stylo.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="javascript/recuperador.js"></script>
+	<script type="text/javascript" src="javascript/precios.js"></script>
+	<script type="text/javascript" src="javascript/horas.js"></script>
+	<script type="text/javascript" src="javascript/deshabilitador_horas.js"></script>
+	<script type="text/javascript" src="javascript/cupones.js"></script>
+</head>
+<body onload="Apagado()">
+	<header>
+		<section id="inicio">
+			<div class="vinculos">
+				<img src="img/colores magicos.png" class="imgcabecera">
+				<nav>
+					<table id="tablanav">
+						<tr id="fila1">
+							<td>
+								<a href="#inicio">
+									<button>
+										Inicio
+									</button>
+								</a>
+							</td>
+							<td>
+								<a href="#galeria">
+									<button>
+										Galeria
+									</button>
+								</a>
+							</td>
+							<td>
+								<a href="#pedidos">
+									<button>
+										Pedidos
+									</button>
+								</a>
+							</td>
+							<td>
+								<a href="#contacto">
+									<button>
+										Contacto
+									</button>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</nav>
+			</div>
+		</section>
+	</header>
+	<main>
+		<div class="cabecera2">
+			<br><br><br><br>
+			<h1>Bienvenido a Colores Mágicos!</h1>
+			<h2>Nos dedicamos a convertir en realidad los más hermosos trazos</h2>
+			<h3>Conoce nuestros servicios</h3>
+		</div>
+		<div class="servicios">
+			<div class="contenedor">
+				<img src="img/pintacarita.jpg" class="imgtama">
+				<div class="derecha"><!--class="derecha"-->
+					<h3 class="centro">Pintacaritas</h3>
+					<p>Utilizamos pintura apta para el cuidado de la piel en todo tipo de cutis, la piel de los niños es especialmente más sensible ante factores externos ya sean ambientales o productos químicos, por ello estamos comprometidos a utilizar productos de la más alta calidad.</p>
+					<p>Cada instrumento de trabajo es perfectamente cuidado y esterilizado para garantizar un diseño a la altura de nuestros consumidores.</p>
+				</div>
+			</div>
+			<br><br>
 
+			<div class="contenedor">
+				<div class="izquierda">
+					<h3 class="centro2">Caballetes</h3>
+					<p>Los colores son vida, los encontramos en todo lugar y en todo momento, transmitimos esa magia no solo a través de pintacaritas sino en lienzos que tus hijos pueden pintar a su gusto.</p>
+					<p>Nos gusta proporcionar una gran gama de colores a los pequeños para permitir que su imaginación a través de sus manos nos muestre sus sueños e ideas.</p>
+				</div>
+				<img src="img/caballetes.jpg" class="imgtama">
+			</div>
+			<br><br>
+
+			<div class="contenedor">
+				<img src="img/yesos.png" class="imgtama">
+				<div class="derecha">
+					<h3 class="centro">Yesitos</h3>
+					<p>Desde tiempos antiguos el hombre ha dibujado, nos remontamos a la época de las cavernas donde se tenía la creencia de que, al dibujar algo sobre un muro, preservaba su alma. este conocimiento se extendió hasta los grandes escultores</p>
+					<p>Otra forma de expresion es a través de plasmar pintura en figuras de yeso que estamos seguros, permitirán a tus hijos conocer la profundidad de los colores y como estos se pueden utilizar para transmitir mensajes y emociones.</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="titulo_gal">
+			Galería Mágica
+		</div>
+		<br>
+		<section id="galeria" class="galeria">
+			<img src="img/1.jpg">
+			<img src="img/2.jpg">
+			<img src="img/3.jpg">
+			<img src="img/4.jpg">
+			<img src="img/5.jpg">
+			<img src="img/6.jpg">
+			<img src="img/7.jpg">
+			<img src="img/8.jpg">
+		</section>
+		<br><br>
+		<section id="pedidos">
+			<div class="formu-fondo">
+				<form action="recurso.html" method="post" target="_blank">
+					<table class="tabla-estilo">
+						<tr>
+							<td colspan="3">Reservar un evento<br><br></td>
+						</tr>
+						<tr>
+							<td>
+								<label for="nombre">Nombre </label>
+								<br>
+								<input type="text" name="nombre" id="nombre" class="entrada" required>
+								<br><br>
+							</td>
+							<td>
+								<label for="direccion">Direccion </label>
+								<br>
+								<input type="text" name="direccion" id="direccion" class="entrada" required>
+								<br><br>
+							</td>
+							<td>
+								<label for="email">Correo </label>
+								<br>
+								<input type="email" name="mail" id="correo" class="entrada" required>
+								<br><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+								<label for="zona">Elija la zona del evento</label>
+								<br><br>
+								
+								<input type="radio" id="precio1" name="precio" onclick="getPrecios()">
+								<label for="precio1">Dentro del área<br></label>
+
+								<input type="radio" id="precio2" name="precio" onclick="getPrecios()">
+								<label for="precio2">Fuera del área<br></label>
+							</td>
+							<td colspan="2" width="70%" id="tit_tabla2">Menú de precios<br><br>
+								<table id="tabla2">
+									<tr id="titulos">
+										<td>Servicio</td>
+										<td>Precio</td>
+										<td width="20%"> Horas </td>
+									</tr>
+									<tr>
+										<td class="iz">
+											<input type="checkbox" name="ser" id="s1" onclick="getOpcion()">
+											<label for="s1">Caballetes</label>
+										</td>
+										<td>
+											<input type="text" id="paq1" readonly="readonly" class="lectura">
+										</td>
+										<td>
+											<select name="horas" id="h1">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="iz">
+											<input type="checkbox" name="ser" id="s2" onclick="getOpcion()">
+											<label for="s2">Pintacaritas</label>
+										</td>
+										<td>
+											<input type="text" id="paq2" readonly="readonly" class="lectura">
+										</td>
+										<td>
+											<select name="horas" id="h2">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="iz">
+											<input type="checkbox" name="ser" id="s3" onclick="getOpcion()">
+											<label for="s3">Yesitos</label>
+										</td>
+										<td>
+											<input type="text" id="paq3" readonly="readonly" class="lectura">
+										</td>
+										<td>
+											<select name="horas" id="h3">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="iz">
+											<input type="checkbox" name="ser" id="s4" onclick="getOpcion()">
+											<label for="s4">Caballetes y pintacaritas</label>
+										</td>
+										<td>
+											<input type="text" id="paq4" readonly="readonly" class="lectura">
+										</td>
+										<td>
+											<select name="horas" id="h4">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="iz">
+											<input type="checkbox" name="ser" id="s5" onclick="getOpcion()">
+											<label for="s5">Pintacaritas y yesitos</label>
+										</td>
+										<td>
+											<input type="text" id="paq5" readonly="readonly" class="lectura">
+										</td>
+										<td>
+											<select name="horas" id="h5">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td class="iz">
+											<input type="checkbox" name="ser" id="s6" onclick="getOpcion()">
+											<label for="s6">Caballetes y yesitos</label>
+										</td>
+										<td>
+											<input type="text" id="paq6" readonly="readonly" class="lectura">
+										</td>
+										<td>
+											<select name="horas" id="h6">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+								<br>
+							</td>
+						</tr>
+							<td>
+								<br><br>
+								<label for="fecha">Fecha del evento</label>
+								<br>
+								<input type="date" name="fecha" id="fecha" required>
+								<br><br>
+								<label for="horaI">Hora inicio: </label>
+								<input type="time" name="horario" id="horaI" min="09:00" max="21:00" required>
+								<br><br>
+								<label for="horaF">Hora cierre: </label>
+								<input type="time" name="horario" min="10:00" max="23:00" id="horaF" required>
+								<br><br>
+								Horario de atención:<br>
+								L-V: 4PM - 10PM<br>
+								S-D: Todo el dia
+							</td>
+							<td colspan="2" class="resultados">
+								<label for="codigo">Código de descuento: </label>
+								<input type="text" name="codigo" id="codigo">
+								<button type="button" id="cupon" onclick="cuponera()">Validar</button>
+								<br><br>
+								<label for="descuento">Descuento: </label>
+								<input type="number" name="descuento" min="0" id="descuento" value="0">
+                                <br><br>
+                                <label for="anticipo" value="0">Anticipo: </label>
+                                <input type="number" id="anticipo" name="anticipo">
+                                
+								<br><br>
+							</td>
+						<tr>
+							<td colspan="3">
+								<!--img src="img/Plantilla.png" id="miImg" hidden>
+								<canvas id="micanvas" width="1000" height="2000">		
+								</canvas-->
+								<button type="submit" onclick="local_storage()" id="enviar">
+									Enviar!
+								</button>	
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</section>
+		
+	</main>
+	<br><br><br>
+	<footer>
+		<section id="contacto">
+			<div class="info">
+			<ul>
+				<h3>Dónde nos encontramos</h3>
+				<li>Monterrey N.L.</li>
+				<li>CP: 02330</li>
+				<li>Agustin Melgar #3</li>
+			</ul>
+
+			<img src="img/colores magicos.png" class="colores2">
+
+			<ul>
+				<div class="redes">
+					<h3>Redes Sociales</h3>
+					<li><img src="img/neko.png"> Facebook: /ColoresMagicosMTY</li>
+					<li><img src="img/wsp.png"> Whatsapp: 81 1567 7849</li>
+					<li><img src="img/ig.png"> Instagram: ---</li>
+				</div>
+			</ul>
+		</div>
+		</section>
+	</footer>
+</body>
+</html>
