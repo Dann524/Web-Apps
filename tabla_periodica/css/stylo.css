@@ -1,1 +1,648 @@
+/*
+*
+{
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(
+			150px;
+			1fr;
+		)
+	)
+	gap: 16px;
+}
+*/
+*
+{
+    font-size: 16px;
+}
 
+nav .container-fluid
+{
+	justify-content: space-between;
+    padding: 0 20px 0 20px;
+}    
+
+.texto_historia
+{
+    margin: 10px;
+    color: white;
+    padding: 10px 5%;
+    text-align: justify;
+    font-family: "Montserrat";
+}
+
+.texto_historia h2
+{
+    text-align: center;
+    background-color: rgb(0,0,0,0.8);
+    padding: 8px 0;
+    font-weight: bold;
+}
+
+.texto_historia p
+{
+    background-color: rgb(0,0,0);
+    padding: 8px 10px;
+}
+
+.texto_historia ul
+{
+    list-style: none;
+}
+
+.texto_historia .lista1
+{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.vertical
+{
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+
+table
+{
+    width: 100%;
+    table-layout: fixed;
+    color: white;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+table tr
+{
+    height: 100%;
+    width: 100%;
+    max-height:60px;
+    max-width: 100%;
+}
+
+table tr td
+{
+    max-height: 65px;
+    min-height: 65px;
+    overflow: hidden;
+}
+
+table tr button
+{
+	width: 65px;;
+    height: 65px;
+    transition-duration: 0.3s;
+    margin: 2px;
+    overflow-wrap: break-word;
+    padding: 1px;
+    border-color: transparent;
+    color: white;
+    background-color: #127604;
+}
+
+table button:hover
+{
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+    background-color: white;
+    color: black;
+}
+
+table .lan button:hover, table .act button:hover
+{
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+    background-color: white;
+    color: black;
+}
+
+#tra:hover , #tra2:hover
+{
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+    background-color: white;
+    color: black;
+}
+
+table tr td button div
+{
+	/*si el texto no cabe da un enter*/
+	/*word-break: break-all;*/
+	font-size: 9px;
+	text-align: center;
+	word-break: break-all;
+}
+
+.espacio
+{
+	height: 25px;
+}
+
+table .familias
+{
+    color:white;
+}
+
+table .GN /*Gases Nobles*/
+{
+	background-color: #AF49FE;
+}
+
+table .lan button /*Lantanidoss*/
+{
+	background-color: #021349;
+}
+
+table .act button /*Actinidos*/
+{
+	background-color: #1EC211;
+}
+
+table .mtl /*Metaloides*/
+{
+	background-color: #A70101;
+}
+
+table .hlg /*Halógenos*/
+{
+    background-color: #D55FDC;
+}
+
+table .nm /*No Metales*/
+{
+    background-color: #4D6EDB;
+}
+
+table .ma /*Metales Alcalinos*/
+{
+    background-color: #F98801;
+}
+
+table .mat /*Metales Alcalino Terreos*/
+{
+    background-color: #DA8848;
+}
+
+table .om /*Otros Metales*/
+{
+    background-color: #F9C401;
+}
+
+table #tra
+{
+    background-color: #021349;
+}
+
+table #tra2
+{
+    background-color: #1EC211;
+}
+
+
+.contenedor
+{
+    display:flex;
+    border-radius: 10px 10px 10px 10px;
+    /*background-color: rgb(255,255,255,0.4);*/
+    width: 100%;
+    margin: 10px 15px 10px 15px;
+}
+
+.contenedor2
+{
+    display:grid;
+    /*border: pink solid;*/
+    width: 20%;
+    margin: 5px;
+    border-radius: inherit;
+    padding: 1px;
+    position: relative;
+}
+
+.contenedor .contenedor2 .info
+{
+    border-radius: inherit;
+    margin: 5px 0 50 0;
+    height: 250px;
+    background-color: rgb(0,0,0,0.6);
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+.contenedor .contenedor2 .imagenes
+{
+
+    margin: 0 0 5px 0;
+    border-radius: inherit;
+    height: 200px;
+    background-color: white;
+    padding: 1px;
+}
+
+#img_elem
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contenedor .infovideo
+{
+    width: 80%;
+    margin: 5px 5px 5px 0;
+    display: flex;
+}
+
+.contenedor .infovideo .videoelem
+{
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 5px;
+    width: 75%;
+}
+
+iframe
+{
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor .infovideo .infotexto
+{
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(0,0,0,0.6);
+    padding: 15px 8px;
+    text-align: justify;
+    font-size: 14px;
+    margin-right: 5px;
+    width: 25%;
+    word-wrap: break-word;
+    color: white;
+}
+
+.credit
+{
+    display: flex;
+    color: black;
+    width: 95%;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2% 3%;
+    background-color: rgb(255,255,255,0.7);
+    border-radius: 10px;
+    text-align: start;
+    overflow-wrap: break-word;
+}
+
+.credit div
+{
+    border: white solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 100%;
+    margin: 0 1%;
+    padding: auto;
+    overflow-wrap: break-word;
+}
+
+.credit .conta1
+{
+    border-right-color: transparent;
+}
+
+footer a, h5
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    word-wrap: break-word;
+    font-size: 0.9em;
+    
+}
+
+footer img
+{
+    width: 20%;
+    height: 20%;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+/*Resposive*/
+@media only screen and (max-width:360px) and (min-width:240px)
+{
+    nav .navbar-brand
+    {
+        justify-content: space-between;
+        padding: 0 5px;
+        font-size: 12px;
+    } 
+    .texto_historia
+    {
+        font-size: 12px;
+    }
+    .texto_historia .lista1
+    {
+        width: 14px;
+        height: 14px;
+        margin: 0 5px;
+    }
+    table
+    {
+        font-size: 7px;
+    }
+    table tr button
+    {
+        width: 12px;
+        height: 12px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        font-size: 6px;
+    }
+   table tr td button div
+    {
+        /*Desaparece el nombre*/
+        display: none;
+    }
+    .contenedor
+    {
+        display:grid;
+        border-radius: 5px;
+        width: 100%;
+        margin: 5px 10px;
+    }    
+    .contenedor2
+    {
+        width: 90%;
+        margin: 3px;
+        border-radius: inherit;
+    }
+    .contenedor .contenedor2 .imagenes
+    {
+        height: 150px;
+        width: 100%;
+    }
+    .contenedor .infovideo
+    {
+        width: 100%;
+        margin: 5px 5px 5px 0;
+        display: grid;
+    }
+    .contenedor .infovideo .videoelem
+    {
+        display: none;
+    }
+
+    .contenedor .infovideo .infotexto
+    {
+        padding: 5px;
+        text-align: justify;
+        font-size: 10px;
+        margin: 5px;
+        width: 90%;
+        word-wrap: break-word;
+    } 
+    
+    .credit
+    {
+        display: grid;
+    }
+    
+    .credit div
+    {
+        border-right-color: transparent;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width:576px) and (min-width:361px)
+{
+    .texto_historia
+    {
+        font-size: 14px;
+    }
+    .texto_historia .lista1
+    {
+        width: 14px;
+        height: 14px;
+    }
+    table
+    {
+        font-size: 7px;
+    }
+    table tr button
+    {
+        width: 18px;
+        height: 18px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+   table tr td button div
+    {
+        /*Desaparece el nombre*/
+        display: none;
+    }
+    .contenedor
+    {
+        display:grid;
+        border-radius: 5px;
+        width: 100%;
+        margin: 5px 10px;
+    }    
+    .contenedor2
+    {
+        width: 90%;
+        margin: 3px;
+        border-radius: inherit;
+    }
+    .contenedor .contenedor2 .imagenes
+    {
+        height: 150px;
+        width: 100%;
+    }
+    .contenedor .infovideo
+    {
+        width: 100%;
+        margin: 5px 5px 5px 0;
+        display: grid;
+    }
+    .contenedor .infovideo .videoelem
+    {
+        /*
+        border-radius: 5px;
+        margin: 5px;
+        width: 100%;
+        */
+        display: none;
+    }
+
+    .contenedor .infovideo .infotexto
+    {
+        padding: 10px;
+        text-align: justify;
+        font-size: 12px;
+        margin: 5px;
+        width: 90%;
+        word-wrap: break-word;
+    }  
+    .credit
+    {
+        display: grid;
+    }
+    
+    .credit div
+    {
+        border-right-color: transparent;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:767px) and (min-width:577px)
+{
+    .texto_historia
+    {
+        font-size: 14px;
+    }
+    .texto_historia .lista1
+    {
+        width: 14px;
+        height: 14px;
+    }
+    table
+    {
+        font-size: 9px;
+    }
+    table tr button
+    {
+        width: 28px;
+        height: 28px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+   table tr td button div
+    {
+        /*Desaparece el nombre*/
+        display: none;
+    }
+    
+    .contenedor2
+    {
+        width: 45%;
+        margin: 5px;
+    }
+   
+    .contenedor .infovideo
+    {
+        width: 60%;
+        margin: 5px 5px 5px 0;
+        display: grid;
+    }
+    .contenedor .infovideo .videoelem
+    {
+        border-radius: 5px;
+        margin: 5px;
+        width: 95%;
+    }
+
+    .contenedor .infovideo .infotexto
+    {
+        text-align: justify;
+        font-size: 12px;
+        margin: 5px;
+        width: 95%;
+    }
+    
+    .credit
+    {
+        display: grid;
+    }
+    
+    .credit div
+    {
+        border-right-color: transparent;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:991px) and (min-width:768px)
+{
+    table
+    {
+        font-size: 11px;
+    }
+    table tr button
+    {
+        width: 38px;
+        height: 38px;
+        margin-right: 1px;
+        margin-left: 1px;
+        padding: 1px;
+    }
+   table tr td button div
+    {
+        /*Desaparece el nombre*/
+        display: none;
+    }
+    
+    .contenedor2
+    {
+        width: 45%;
+        margin: 5px;
+    }
+   
+    .contenedor .infovideo
+    {
+        width: 60%;
+        margin: 5px 5px 5px 0;
+        display: grid;
+    }
+    .contenedor .infovideo .videoelem
+    {
+        border-radius: 5px;
+        margin: 5px;
+        width: 95%;
+    }
+
+    .contenedor .infovideo .infotexto
+    {
+        text-align: justify;
+        margin: 5px;
+        width: 95%;
+    }  
+}
+
+@media only screen and (max-width:1099px) and (min-width:992px)
+{
+    table
+    {
+        font-size: 12px;
+    }
+    table tr button
+    {
+        width: 48px;
+        height: 48px;
+        margin-right: 2px;
+        margin-left: 2px;
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1100px)
+{
+    table tr button
+    {
+        width: 55px;
+        height: 55px;
+    }
+}
