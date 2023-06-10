@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icono.avif">
+	<link rel="stylesheet" type="text/css" href="css/stylo.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/llamado.js"></script>
+    <script type="text/javascript" src="js/llamadop5.js"></script>
+    <script type="text/javascript" src="js/llamadolan.js"></script>
+    <script type="text/javascript" src="js/llamadoact.js"></script>
+	<title>Inicio - Tabla Periódica</title>
+</head>
+<body background="img/fondo.jpg" onload="carga()">
+	<header>
+		<section id="inicio">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand">Tabla Periódica Interactiva</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#historia">Historia</a>
+                    <a class="nav-link" href="#tabla">Tabla</a>
+                    <a class="nav-link" href="#resumen">Resumen</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </div>
+                </div>
+                <!--Atinguo cierre de container fluid-->
+            </nav>
+		</section>
+	</header>
+	<main>
+        <br><br><br>
+		<section id="historia">
+            <div class="texto_historia">
+                <h2>Qué es?</h2>
+                <p>Actualmente, la tabla periódica se compone de 118 elementos distribuidos en 7 filas horizontales llamadas periodos y 18 columnas verticales, conocidas como grupos. Su descubridor, el químico ruso Dmitri Mendeléiev, no fue premiado con el Nobel por lo que es una de las contribuciones capitales en la historia de la química. A cambio, en 1955 recibió el honor de prestar su nombre al mendelevio (Md), el elemento químico de número atómico 101 en la tabla periódica.</p>
 
+                <p>La tabla periódica es un cuadro que presenta todos los elementos químicos que existen ordenados según sus propiedades físicas. Fue diseñada por el químico ruso Dmitri Mendeléiev en 1869 y es considerado por muchos como el descubrimiento más importante de la química. Y es que esta compleja ordenación de los elementos permitió predecir el descubrimiento de nuevos elementos y permitió realizar investigaciones teóricas sobre estructuras desconocidas hasta el momento.</p>
+                
+                <h2>Cuántos elementos tiene la Tabla Periódica?</h2>
+                <p>Actualmente la tabla periódica actual cuenta con 118 elementos (94 de los cuales se dan de manera natural en la Tierra) sin embargo, los científicos están intentando sintetizar nuevos elementos artificiales, por lo que no se descarta que esta lista aumente en el futuro. De hecho los grandes laboratorios de Japón, Rusia, Estados Unidos y Alemania compiten por ser los primeros en obtener los siguientes: el 119 y el 120</p>
+                <h2>Cómo está organizada?</h2>
+                <p>La tabla periódica de los elementos está organizada de menor a mayor según su número atómico, es decir, el número total de protones que tiene cada átomo de ese elemento. Además están distribuidos en 7 filas horizontales llamadas periodos y 18 columnas verticales conocidas como grupos, de modo que los elementos que pertenecen al mismo grupo tienen propiedades similares</p>
+                <h2>Qué significa cada elemento?</h2>
+                <p>Cada casilla de la tabla periódica corresponde a un elemento químico con unas propiedades determinadas. En dicha casilla se especifica su nombre, el símbolo químico del elemento, su número atómico (cantidad de protones), su masa atómica, la energía de ionización, la electronegatividad, sus estados de oxidación y la configuración electrónica. Gracias a los símbolos químicos se pueden abreviar los elementos de ciertas materias, como el agua, que está compuesta por dos moléculas de hidrógeno y una de oxígeno, es decir: H2O</p>
+                <h2>Grupos de la tabla peri[odica</h2>
+                <p>Las 18 columnas verticales conforman los conocidos como grupos de la tabla periódica y son elementos que tienden a tener propiedades químicas similares. por ejemplo, la columna más a la izquierda de la tabla, la conocida como el grupo de los metales alcalinos, contiene elementos como el sodio, el potasio o el litio, todos ellos sólidos a temperatura ambiente, con puntos de fusión bajos, muy reactivos y con tendencia a ennegrecerse en contacto con el aire. Su nomenclatura ha cambiado, tanto a lo largo del tiempo como de los países donde se nombren.</p>
+                <h2>Clasificación de los elementos</h2>
+                <ul>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 1: Metales Alcalinos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 2: Metales Alcalinotérreos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 3: Familia del Escandio (tierras raras y actínidos)</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 4: Familia del Titanio</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 5: Familia del Vanadio</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 6: Familia del Cromo</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 7: Familia del Manganeso</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 8: Familia del Hierro</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 9: Familia del Cobalto</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 10: Familia de Níquel</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 11: Familia del Cobre</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 12: Familia del Zinc</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 13: Térreos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 14: Carbonoideos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 15: Nitrogenoideos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 16: Calcógenos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 17: Halógenos</li>
+                    <li><img src="img/iconos/tubo508.png" class="lista1">Grupo 18: Gases Nobles</li>
+                </ul>
+            </div>
+        </section>
+        <br><br>
+		<section id="tabla">
+			<div>
+				<table>
+					<tr><th colspan="19">TABLA PERIÓDICA DE LOS ELEMENTOS</th></tr>
+					<tr class="familias">
+                        <td></td>
+                        <td>IA</td>
+                        <td>IIA</td>
+                        <td>IIIB</td>
+                        <td>IVB</td>
+                        <td>VB</td>
+                        <td>VIB</td>
+                        <td>VIIB</td>
+                        <td>VIIIB</td>
+                        <td>VIIIB</td>
+                        <td>VIIIB</td>
+                        <td>IB</td>
+                        <td>IIB</td>
+                        <td>IIIA</td>
+                        <td>IVA</td>
+                        <td>VA</td>
+                        <td>VIA</td>
+                        <td>VIIA</td>
+                        <td>VIIIA</td>
+                    </tr>
+					<tr><!--PERIODO 1-->
+						<td rowspan="8" class="vertical">Periodos</td>
+						<td><button class="nm" onclick="elem(1)">H<br><div>Hidrógeno</div></button></td>
+						<td colspan="16"></td>
+						<td><button class="GN" onclick="elem(2)">He<br><div>Helio</div></button></td>
+					</tr>
+					<tr><!--PERIODO 2-->
+						<td><button class="ma" onclick="elem(3)">Li<br><div>Litio</div></button></td>
+						<td><button class="mat" onclick="elem(4)">Be<br><div>Berilio</div></button></td>
+						<td colspan="10"></td>
+						<td><button class="mtl" onclick="elem(5)">B<br><div>Boro</div></button></td>
+						<td><button class="nm" onclick="elem(6)">C<br><div>Carbono</div></button></td>
+						<td><button class="nm" onclick="elem(7)">N<br><div>Nitrógeno</div></button></td>
+						<td><button class="nm" onclick="elem(8)">O<br><div>Oxígeno</div></button></td>
+						<td><button class="hlg" onclick="elem(9)">F<br><div>Fluor</div></button></td>
+						<td><button class="GN" onclick="elem(10)">Ne<br><div>Neon</div></button></td>
+					</tr>
+					<tr><!--PERIODO 3-->
+						<td><button class="ma" onclick="elem(id)" id="11">Na<br><div>Sodio</div></button></td>
+						<td><button class="mat" onclick="elem(id)" id="12">Mg<br><div>Magnesio</div></button></td>
+						<td colspan="10"></td>
+						<td><button class="om" onclick="elem(id)" id="13">Al<br><div>Aluminio</div></button></td>
+						<td><button class="mtl" onclick="elem(id)" id="14">Si<br><div>Silicio</div></button></td>
+						<td><button class="nm" onclick="elem(id)" id="15">P<br><div>Fósforo</div></button></td>
+						<td><button class="nm" onclick="elem(id)" id="16">S<br><div>Azufre</div></button></td>
+						<td><button class="hlg" onclick="elem(id)" id="17">Cl<br><div>Cloro</div></button></td>
+						<td><button class="GN" onclick="elem(id)" id="18">Ar<br><div>Argón</div></button></td>
+					</tr>
+					<tr><!--PERIODO 4-->
+						<td><button class="ma" onclick="elem(id)" id="19">K<br><div>Potasio</div></button></td>
+						<td><button class="mat" onclick="elem(id)" id="20">Ca<br><div>Calcio</div></button></td>
+						<td><button onclick="elem(id)" id="21">Sc<br><div>Escandio</div></button></td>
+						<td><button onclick="elem(id)" id="22">Ti<br><div>Titanio</div></button></td>
+						<td><button onclick="elem(id)" id="23">V<br><div>Vanadio</div></button></td>
+						<td><button onclick="elem(id)" id="24">Cr<br><div>Cromo</div></button></td>
+						<td><button onclick="elem(id)" id="25">Mn<br><div>Manganeso</div></button></td>
+						<td><button onclick="elem(id)" id="26">Fe<br><div>Hierro</div></button></td>
+						<td><button onclick="elem(id)" id="27">Co<br><div>Cobalto</div></button></td>
+						<td><button onclick="elem(id)" id="28">Ni<br><div>Níquel</div></button></td>
+						<td><button onclick="elem(id)" id="29">Cu<br><div>Cobre</div></button></td>
+						<td><button onclick="elem(id)" id="30">Zn<br><div>Zinc</div></button></td>
+						<td><button class="om" onclick="elem(id)" id="31">Ga<br><div>Galio</div></button></td>
+						<td><button class="mtl" onclick="elem(id)" id="32">Ge<br><div>Germanio</div></button></td>
+						<td><button class="mtl" onclick="elem(id)" id="33">As<br><div>Arsénico</div></button></td>
+						<td><button class="nm" onclick="elem(id)" id="34">Se<br><div>Selenio</div></button></td>
+						<td><button class="hlg" onclick="elem(id)" id="35">Br<br><div>Bromo</div></button></td>
+						<td><button class="GN" onclick="elem(id)" id="36">Kr<br><div>Kriptón</div></button></td>
+					</tr>
+					<tr><!--PERIODO 5-->
+						<td><button class="ma" onclick="elem2(id)" id="37">Rb<br><div>Rubidio</div></button></td>
+						<td><button class="mat" onclick="elem2(id)" id="38">Sr<br><div>Estroncio</div></button></td>
+						<td><button onclick="elem2(id)" id="39">Y<br><div>Itrio</div></button></td>
+						<td><button onclick="elem2(id)" id="40">Zr<br><div>Circonio</div></button></td>
+						<td><button onclick="elem2(id)" id="41">Nb<br><div>Niobio</div></button></td>
+						<td><button onclick="elem2(id)" id="42">Mo<br><div>Molibdeno</div></button></td>
+						<td><button onclick="elem2(id)" id="43">Tc<br><div>Tecnecio</div></button></td>
+						<td><button onclick="elem2(id)" id="44">Ru<br><div>Rutenio</div></button></td>
+						<td><button onclick="elem2(id)" id="45">Rh<br><div>Rhodio</div></button></td>
+						<td><button onclick="elem2(id)" id="46">Pd<br><div>Paladio</div></button></td>
+						<td><button onclick="elem2(id)" id="47">Ag<br><div>Plata</div></button></td>
+						<td><button onclick="elem2(id)" id="48">Cd<br><div>Cadmio</div></button></td>
+						<td><button class="om" onclick="elem2(id)" id="49">In<br><div>Indio</div></button></td>
+						<td><button class="om" onclick="elem2(id)" id="50">Sn<br><div>Estaño</div></button></td>
+						<td><button class="mtl" onclick="elem2(id)" id="51">Sb<br><div>Antimonio</div></button></td>
+						<td><button class="mtl" onclick="elem2(id)" id="52">Te<br><div>Telurio</div></button></td>
+						<td><button class="hlg" onclick="elem2(id)" id="53">I<br><div>Yodo</div></button></td>
+						<td><button class="GN" onclick="elem2(id)" id="54">Xe<br><div>Xenón</div></button></td>
+					</tr>
+					<tr><!--PERIODO 6-->
+						<td><button class="ma" onclick="elem3(id)" id="55">Cs<br><div>Cesio</div></button></td>
+						<td><button class="mat" onclick="elem3(id)" id="56">Ba<br><div>Bario</div></button></td>
+						<td><button id="tra"><div>Lantanido</div></button></td>
+						<td><button onclick="elem3(id)" id="72">Hf<br><div>Hafnio</div></button></td>
+						<td><button onclick="elem3(id)" id="73">Ta<br><div>Tantalio</div></button></td>
+						<td><button onclick="elem3(id)" id="74">W<br><div>Tungsteno</div></button></td>
+						<td><button onclick="elem3(id)" id="75">Re<br><div>Renio</div></button></td>
+						<td><button onclick="elem3(id)" id="76">Os<br><div>Osmio</div></button></td>
+						<td><button onclick="elem3(id)" id="77">Ir<br><div>Iridio</div></button></td>
+						<td><button onclick="elem3(id)" id="78">Pt<br><div>Platino</div></button></td>
+						<td><button onclick="elem3(id)" id="79">Au<br><div>Oro</div></button></td>
+						<td><button onclick="elem3(id)" id="80">Hg<br><div>Mercurio</div></button></td>
+						<td><button class="om" onclick="elem3(id)" id="81">Tl<br><div>Talio</div></button></td>
+						<td><button class="om" onclick="elem3(id)" id="82">Pb<br><div>Plomo</div></button></td>
+						<td><button class="om" onclick="elem3(id)" id="83">Bi<br><div>Bismuto</div></button></td>
+						<td><button class="mtl" onclick="elem3(id)" id="84">Po<br><div>Polonio</div></button></td>
+						<td><button class="hlg"onclick="elem3(id)" id="85">At<br><div>Astato</div></button></td>
+						<td><button class="GN" onclick="elem3(id)" id="86">Rn<br><div>Radón</div></button></td>
+					</tr>
+					<tr><!--PERIODO 7-->
+						<td><button class="ma" onclick="elem4(id)" id="87">Fr<br><div>Francio</div></button></td>
+						<td><button class="mat" onclick="elem4(id)" id="88">Ra<br><div>Radón</div></button></td>
+						<td><button id="tra2"><div>Actinido</div></button></td>
+						<td><button onclick="elem4(id)" id="104">Rf<br><div>Rutherfordio</div></button></td>
+						<td><button onclick="elem4(id)" id="105">Db<br><div>Dubrio</div></button></td>
+						<td><button onclick="elem4(id)" id="106">Sg<br><div>Seaborgio</div></button></td>
+						<td><button onclick="elem4(id)" id="107">Bh<br><div>Bohrio</div></button></td>
+						<td><button onclick="elem4(id)" id="108">Hs<br><div>Hasio</div></button></td>
+						<td><button onclick="elem4(id)" id="109">Mt<br><div>Meitnerio</div></button></td>
+						<td><button onclick="elem4(id)" id="110">Ds<br><div>Darmstatio</div></button></td>
+						<td><button onclick="elem4(id)" id="111">Rg<br><div>Reontgenio</div></button></td>
+						<td><button onclick="elem4(id)" id="112">Cn<br><div>Copérnico</div></button></td>
+						<td><button class="om" onclick="elem4(id)" id="113">Nh<br><div>Nihonio</div></button></td>
+						<td><button class="om" onclick="elem4(id)" id="114">Fl<br><div>Flerovio</div></button></td>
+						<td><button class="om" onclick="elem4(id)" id="115">Mc<br><div>Moscovio</div></button></td>
+						<td><button class="om" onclick="elem4(id)" id="116">Lv<br><div>Livermorio</div></button></td>
+						<td><button class="hlg" onclick="elem4(id)" id="117">Ts<br><div>Teneso</div></button></td>
+						<td><button class="GN" onclick="elem4(id)" id="118">Og<br><div>Oganesón</div></button></td>
+					</tr>
+					<tr>
+						<td colspan="19" class="espacio"></td>
+					</tr>
+					<tr class="lan"><!--Lantanidos-->
+						<td colspan="4">Lantanidos</td>
+							<td><button onclick="elem3(id)" id="57">La<br><div>Lantanio</div></button></td>
+							<td><button onclick="elem3(id)" id="58">Ce<br><div>Cerio</div></button></td>
+							<td><button onclick="elem3(id)" id="59">Pr<br><div>Praseodimio</div></button></td>
+							<td><button onclick="elem3(id)" id="60">Nd<br><div>Neodimio</div></button></td>
+							<td><button onclick="elem3(id)" id="61">Pm<br><div>Prometio</div></button></td>
+							<td><button onclick="elem3(id)" id="62">Sm<br><div>Samario</div></button></td>
+							<td><button onclick="elem3(id)" id="63">Eu<br><div>Europio</div></button></td>
+							<td><button onclick="elem3(id)" id="64">Gd<br><div>Gadolinio</div></button></td>
+							<td><button onclick="elem3(id)" id="65">Tb<br><div>Terbio</div></button></td>
+							<td><button onclick="elem3(id)" id="66">Dy<br><div>Disprosio</div></button></td>
+							<td><button onclick="elem3(id)" id="67">Ho<br><div>Holmio</div></button></td>
+							<td><button onclick="elem3(id)" id="68">Er<br><div>Erbio</div></button></td>
+							<td><button onclick="elem3(id)" id="69">Tm<br><div>Tulio</div></button></td>
+							<td><button onclick="elem3(id)" id="70">Yb<br><div>Iterbio</div></button></td>
+							<td><button onclick="elem3(id)" id="71">Lu<br><div>Lutecio</div></button></td>
+					</tr>
+					<tr class="act"><!--Actinidos-->
+						<td colspan="4">Actinidos</td>
+							<td><button onclick="elem4(id)" id="89">Ac<br><div>Actinio</div></button></td>
+							<td><button onclick="elem4(id)" id="90">Th<br><div>Torio</div></button></td>
+							<td><button onclick="elem4(id)" id="91">Pa<br><div>Protactinio</div></button></td>
+							<td><button onclick="elem4(id)" id="92">U<br><div>Uranio</div></button></td>
+							<td><button onclick="elem4(id)" id="93">Np<br><div>Neptunio</div></button></td>
+							<td><button onclick="elem4(id)" id="94">Pu<br><div>Plutonio</div></button></td>
+							<td><button onclick="elem4(id)" id="95">Am<br><div>Americio</div></button></td>
+							<td><button onclick="elem4(id)" id="96">Cm<br><div>Curio</div></button></td>
+							<td><button onclick="elem4(id)" id="97">Bk<br><div>Berkelio</div></button></td>
+							<td><button onclick="elem4(id)" id="98">Cf<br><div>Californio</div></button></td>
+							<td><button onclick="elem4(id)" id="99">Es<br><div>Einstenio</div></button></td>
+							<td><button onclick="elem4(id)" id="100">Fm<br><div>Fermio</div></button></td>
+							<td><button onclick="elem4(id)" id="101">Md<br><div>Mendelevio</div></button></td>
+							<td><button onclick="elem4(id)" id="102">No<br><div>Nobelio</div></button></td>
+							<td><button onclick="elem4(id)" id="103">Lr<br><div>Laurencio</div></button></td>
+					</tr>
+				</table>
+			</div>
+        </section>
+        <section id="resumen">
+            <div class="contenedor">
+                <div class="contenedor2">
+                    <div class="imagenes">
+                        <img src="img/icono.avif" id="img_elem" alt="Visualizador">
+                    </div>
+                    <div class="info" id="info">
+                        
+                    </div>
+                </div>
+                <div class="infovideo">
+                    <div class="videoelem">
+                        <iframe src="https://www.youtube.com/embed/8oy4KuPfAGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="infotexto" id="infotexto">
+                                    
+                    </div>
+                </div>
+            </div>
+		</section>
+	</main>
+	<footer>
+        <br>
+        <section id="contacto">
+            <div class="credit">
+                <div>
+                    <h5>Artículos de interés</h5>
+                    <ul>
+                        <li><a href="">Gases Nobles</a></li>
+                        <li><a href="">No metales</a></li>
+                        <li><a href="">Metaloides</a></li>
+                        <li><a href="">Halógenos</a></li>
+                        <li><a href="">Tierras raras</a></li>
+                        <li><a href="">Metales de transición</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Ciencias</h5>
+                    <ul>
+                        <li><a href="">Matemáticas</a></li>
+                        <li><a href="">Física</a></li>
+                        <li><a href="">Biología</a></li>
+                        <li><a href="">Sociales</a></li>
+                        <li><a href="">Salud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Documentación</h5>
+                    <ul>
+                        <li><a href="">National Geographic</a></li>
+                        <li><a href="">Tu Química</a></li>
+                    </ul>
+                </div>
+                <div class="conta1">
+                    <h5>Síguenos</h5>
+                    <br>
+                    <ul>
+                        <a href="https://www.facebook.com/IUPAC.org/"><img src="img/iconos/402-facebook2.png"></a>
+                        <a href="https://twitter.com/IUPAC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/iconos/407-twitter.png"></a>
+                        <a href="https://www.instagram.com/iupac2019/?hl=es"><img src="img/iconos/403-instagram.png"></a>
+                        <a href="https://youtube.com/@iupac1481"><img src="img/iconos/414-youtube.png"></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
